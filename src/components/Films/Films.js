@@ -16,7 +16,7 @@ const Films = () => {
     console.log(movies);
     return (
         <div>
-            {movies.map(movie=><Film key={movie.id} movie={movie}/> )}
+            {/*{movies.map(movie=><Film key={movie.id} movie={movie}/> )}*/}
         </div>
     );
 };
