@@ -15,7 +15,7 @@ const Film = ({movie}) => {
     return (
         <div>
             <div>id:{id}</div>
-            {/*<img src="poster_path" alt="img"/>*/}
+            <img src={"https://image.tmdb.org/t/p/w300" + poster_path} alt="img"/>
             {/*<div onClick={()=>dispatch(movieActions.setSelectedMovie(movie))}>title:{title}</div>*/}
             <NavLink onClick={()=>dispatch(movieActions.setSelectedMovie(movie))} to={`${id}`}>{title}</NavLink>
         </div>
