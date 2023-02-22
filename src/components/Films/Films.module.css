@@ -1,0 +1,28 @@
+body{
+    width: 100% ;
+    height: 100%;
+    display: flex;
+}
+.Films{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: silver;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.buttons{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+button{
+    display: flex;
+}
+.buttonsContainer{
+    width: 100vh;
+    display: flex;
+
+}
