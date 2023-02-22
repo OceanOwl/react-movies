@@ -1,11 +1,9 @@
-const baseURL = 'https://api.themoviedb.org/3/discover'
-const movies = '/movie'
+const baseURL = 'https://api.themoviedb.org/3'
 
 const urls = {
-    movies:{
-        movies,
-        byId:(id)=>`${movies}/${id}`
-    }
+    movies:`/discover/movie`,
+    movie:`/movie`
+
 
 }
 

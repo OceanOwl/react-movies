@@ -1,0 +1,33 @@
+.Header{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #1c2b53;
+    position: fixed;
+}
+a{
+    /*color: snow;*/
+    text-decoration: none;
+    margin: 5px;
+}
+.searchPanel{
+    width: 60px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+}
+.leftSide{
+    display: flex;
+    justify-content: left;
+}
+.hrefka{
+    color: snow;
+}
+.fa-solid{
+    color: yellow;
+    width: 10px;
+    height: 10px;
+}

@@ -1,14 +1,11 @@
 import React from 'react';
 
-
-const MoviePage = () => {
-
-
+const HomePage = () => {
     return (
         <div>
-            Movie page
+            HomePage
         </div>
     );
 };
 
-export {MoviePage};
+export {HomePage};

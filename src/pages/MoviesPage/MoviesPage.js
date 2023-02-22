@@ -1,14 +1,14 @@
 import React from 'react';
-import {useSelector} from "react-redux";
 
 import {Films} from "../../components";
+import {Outlet} from "react-router-dom";
 
 const MoviesPage = () => {
-    const selector = useSelector(state => state.movies);
 
     return (
         <div>
             <Films/>
+            <Outlet/>
         </div>
     );
 };
