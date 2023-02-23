@@ -5,9 +5,42 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+:root {
+  --text-color: black;
+  --background-color: white;
+  --a-color: blue;
+}
+
+.dark {
+  --text-color: white;
+  --background-color: #212121;
+  --a-color: #4fc3f7;
+}
+
+p,
+span,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-color);
+}
+a {
+  color: var(--a-color);
 }

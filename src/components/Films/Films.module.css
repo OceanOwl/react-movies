@@ -8,18 +8,11 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
-    background: silver;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
-/*.buttons{*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*}*/
 button {
     width: 100%;
     background: #1c2b53;
@@ -33,3 +26,4 @@ button {
     display: flex;
 
 }
+

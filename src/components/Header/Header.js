@@ -1,9 +1,7 @@
 import React from 'react';
 
-
 import css from './Header.module.css';
 import {Form, Link} from "react-router-dom";
-import {useForm} from "react-hook-form";
 
 const Header = () => {
 
@@ -12,18 +10,20 @@ const Header = () => {
     return (
         <div className={css.Header}>
 
-                <div className={'leftSide'}>
-                    <Link className={'hrefka'} to={'movies'}>Movies</Link>
-                    <Link className={'hrefka'} to={'Genres'}>Genres</Link>
-                </div>
-                <div className={'searchPanel'}>
-                    <form>
-                        <input type="text" placeholder={'Search for a movie'}/>
-                        <i className="fa-solid fa-magnifying-glass"></i>
+            <div className="leftSide">
+                <Link to={'movies'}>Movies</Link>
+                <Link to={'Genres'}>Genres</Link>
+            </div>
+            <div className="searchPanel">
+                <form>
+                    <input type="text" placeholder={'Search for a movie'}/>
+                </form>
+            </div>
 
-                        <div className={'userIcon'}>User</div>
-                    </form>
-                </div>
+            <div>
+                <span>User info</span>
+            </div>
+
 
         </div>
     );

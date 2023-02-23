@@ -8,27 +8,22 @@
     position: fixed;
 }
 a{
-    /*color: snow;*/
     text-decoration: none;
     margin: 5px;
 }
 .searchPanel{
-    width: 60px;
     display: flex;
-    justify-content: right;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content:space-evenly;
 
-
+}
+input{
+    margin-left: 300px;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
 }
 .leftSide{
     display: flex;
     justify-content: left;
 }
-.hrefka{
-    color: snow;
-}
-.userIcon{
-    display: flex;
 
-}

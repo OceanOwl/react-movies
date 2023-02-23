@@ -11,12 +11,10 @@ const SelectedFilm = () => {
     return (
         <div>
 
-            {/*<Outlet/>*/}
             {selectedMovie &&
                 <div>
-                    <div>{selectedMovie.id}</div>
-                    <div>{selectedMovie.overview}</div>
                     <img src={"https://image.tmdb.org/t/p/w300" + selectedMovie.poster_path} alt="img"/>
+                    <p>{selectedMovie.overview}</p>
 
 
                 </div>

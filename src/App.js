@@ -5,7 +5,10 @@ import {MainLayout} from "./layouts/MainLayout";
 import {HomePage, MoviePage, MoviesPage, NotFoundPage} from "./pages";
 import {Genres} from "./components";
 
+
 const App = () => {
+
+
     return (
         <div>
             <Routes>
