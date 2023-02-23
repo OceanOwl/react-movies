@@ -19,7 +19,7 @@ const Film = ({movie}) => {
 
 
                 <div className={'movieCard'}>
-                    <div>id:{id}</div>
+                    {/*<div>id:{id}</div>*/}
                     <img className={'poster'} src={"https://image.tmdb.org/t/p/w300" + poster_path} alt="img"/>
                     {/*<div onClick={()=>dispatch(movieActions.setSelectedMovie(movie))}>title:{title}</div>*/}
                     <Link onClick={() => dispatch(movieActions.setSelectedMovie(movie))}

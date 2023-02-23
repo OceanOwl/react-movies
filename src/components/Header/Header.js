@@ -21,6 +21,7 @@ const Header = () => {
                         <input type="text" placeholder={'Search for a movie'}/>
                         <i className="fa-solid fa-magnifying-glass"></i>
 
+                        <div className={'userIcon'}>User</div>
                     </form>
                 </div>
 

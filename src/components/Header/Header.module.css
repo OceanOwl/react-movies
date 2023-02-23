@@ -17,6 +17,8 @@ a{
     display: flex;
     justify-content: right;
     align-items: center;
+    flex-wrap: wrap;
+
 
 }
 .leftSide{
@@ -25,4 +27,8 @@ a{
 }
 .hrefka{
     color: snow;
+}
+.userIcon{
+    display: flex;
+
 }

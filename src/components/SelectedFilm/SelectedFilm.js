@@ -22,7 +22,7 @@ const SelectedFilm = () => {
                 </div>
 
             }
-Swlwwww
+
         </div>
     );
 };
