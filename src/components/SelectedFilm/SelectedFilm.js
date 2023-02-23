@@ -6,12 +6,23 @@ const SelectedFilm = () => {
 
     const {selectedMovie} = useSelector(state =>state.movies)
 
+    console.log(selectedMovie);
+
     return (
         <div>
+
+            {/*<Outlet/>*/}
             {selectedMovie &&
-                <div>{selectedMovie.id}-----{selectedMovie.overview}</div>
+                <div>
+                    <div>{selectedMovie.id}</div>
+                    <div>{selectedMovie.overview}</div>
+                    <img src={"https://image.tmdb.org/t/p/w300" + selectedMovie.poster_path} alt="img"/>
+
+
+                </div>
+
             }
-            {/*{selectedMovie.map(selectedMovie=><MovieDetails key={selectedMovie.id}selectedMovie={selectedMovie}/> )}*/}
+Swlwwww
         </div>
     );
 };

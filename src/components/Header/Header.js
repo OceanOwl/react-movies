@@ -7,14 +7,14 @@ import {useForm} from "react-hook-form";
 
 const Header = () => {
 
-    const {register, handleSubmit, reset, setValue, getValues} = useForm();
+    // const {register, handleSubmit, reset, setValue, getValues} = useForm();
 
     return (
         <div className={css.Header}>
 
                 <div className={'leftSide'}>
-                    <Link className={'hrefka'} to={'/movies'}>Movies</Link>
-                    <Link className={'hrefka'} to={'/genres'}>Genres</Link>
+                    <Link className={'hrefka'} to={'movies'}>Movies</Link>
+                    <Link className={'hrefka'} to={'Genres'}>Genres</Link>
                 </div>
                 <div className={'searchPanel'}>
                     <form>

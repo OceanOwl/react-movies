@@ -7,10 +7,15 @@ const MainLayout = () => {
     return (
         <div>
             <Header/>
+            {/*<MoviesPage/>*/}
             <Outlet/>
             <Footer/>
         </div>
     );
 };
 
-export {MainLayout};
+export
+{
+    MainLayout
+}
+    ;

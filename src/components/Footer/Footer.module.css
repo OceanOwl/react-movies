@@ -1,0 +1,12 @@
+.Footer{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1c2b53;
+}
+/*.Subscription{*/
+/*    font-size: 100px;*/
+
+/*}*/

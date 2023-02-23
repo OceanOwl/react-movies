@@ -7,7 +7,7 @@ import {movieActions} from "../../redux/slices/movieSlice";
 import {Film} from "../Film/Film";
 
 const Films = () => {
-    const {movies, page} = useSelector(state => state.movies);
+    const {movies} = useSelector(state => state.movies);
     const dispatch = useDispatch();
     const [query, setQuery] = useSearchParams({page: '1'});
 

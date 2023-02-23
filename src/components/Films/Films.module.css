@@ -1,9 +1,10 @@
-body{
-    width: 100% ;
+body {
+    width: 100%;
     height: 100%;
     display: flex;
 }
-.Films{
+
+.Films {
     width: 100%;
     height: 100%;
     display: flex;
@@ -12,17 +13,23 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-.buttons{
+
+/*.buttons{*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+button {
+    width: 100%;
+    background: #1c2b53;
+    color: snow;
+    border-radius: 5%;
+}
+
+.buttonsContainer {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-}
-button{
-    display: flex;
-}
-.buttonsContainer{
-    width: 100vh;
     display: flex;
 
 }
