@@ -1,12 +1,13 @@
 import React from 'react';
 
 import {useSelector} from "react-redux";
+import {Rating} from "@mui/material";
 
 const SelectedFilm = () => {
 
     const {selectedMovie} = useSelector(state =>state.movies)
 
-    console.log(selectedMovie);
+    // console.log(selectedMovie);
 
     return (
         <div>
@@ -14,7 +15,11 @@ const SelectedFilm = () => {
             {selectedMovie &&
                 <div>
                     <img src={"https://image.tmdb.org/t/p/w300" + selectedMovie.poster_path} alt="img"/>
-                    <p>{selectedMovie.overview}</p>
+                    <span>{selectedMovie.overview}</span>
+                    <Rating name="customized-10"
+                            value={selectedMovie.vote_average}
+                            precision={0.1}
+                            max={10} />
 
 
                 </div>
