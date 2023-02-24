@@ -19,12 +19,7 @@ const Header = () => {
                     <input type="text" placeholder={'Search for a movie'}/>
                 </form>
             </div>
-
-            <div>
-                <span>User info</span>
-            </div>
-
-
+            <h4>User info</h4>
         </div>
     );
 };

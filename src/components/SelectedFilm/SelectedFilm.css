@@ -1,0 +1,18 @@
+.selectedMovieContainer{
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    justify-content: center;
+}
+.secondContainer{
+    width: 70%;
+    display: flex;
+}
+.infoBlock{
+    margin-left: 50px;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+
+}

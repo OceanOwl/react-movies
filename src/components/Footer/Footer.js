@@ -8,7 +8,7 @@ const Footer = () => {
 
     return (
         <div className={css.Footer} >
-            <div className={'Subscribtion'} >Okten school</div>
+            <h2>Okten school</h2>
         </div>
     );
 };
