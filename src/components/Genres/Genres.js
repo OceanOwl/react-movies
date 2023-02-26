@@ -1,20 +1,36 @@
 import React, {useEffect} from 'react';
+
+import css from './Genres.module.css'
+
 import {useDispatch, useSelector} from "react-redux";
 import {genreActions} from "../../redux/slices/genreSlice";
-import {HomePage} from "../../pages";
+import {NavLink} from "react-router-dom";
 
 const Genres = () => {
-    const {genres}=useSelector(state => state.genres);
+
     const dispatch = useDispatch();
+    const {genres: {genres}} = useSelector(state => state.genres);
 
-    useEffect(()=>{
-        dispatch(genreActions.getAll)
-    },[dispatch])
 
+    useEffect(() => {
+        dispatch(genreActions.getAll())
+    }, [dispatch])
+
+    console.log(genres);
     return (
-        <div>
-            {genres.map(item=><Genres key={item.id} item={item}/>)}
-            {/*// <div>{genres.name}</div>}*/}
+        <div className={css.genresContainer}>
+
+            <span>
+
+            {genres &&
+                genres.map(genre => <div key={genre.id}><NavLink to={'MovieByGenre'} state={{
+                    id: genre.id,
+                    name: genre.name
+                }}>{genre.name}</NavLink></div>)
+
+            }
+            </span>
+
         </div>
     );
 };
