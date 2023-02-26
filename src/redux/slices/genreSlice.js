@@ -20,7 +20,7 @@ const getAll = createAsyncThunk(
 );
 const getById = createAsyncThunk(
     'genreSlice/getById',
-    async ({id}, thunkAPI,{state,action})=>{
+    async ({id}, thunkAPI)=>{
 try {
     const {data}= genreService.getById(id)
     return data
@@ -40,6 +40,9 @@ const genreSlice = createSlice({
     reducers: {},
     extraReducers: builder =>
         builder
+            .addCase(getAll.fulfilled, (state, action) => {
+                state.genres = action.payload
+            })
 
 });
 

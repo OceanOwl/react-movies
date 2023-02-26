@@ -3,7 +3,7 @@ import {Route, Routes} from "react-router-dom";
 
 import {MainLayout} from "./layouts/MainLayout";
 import {HomePage, MoviePage, MoviesPage, NotFoundPage} from "./pages";
-import {Genres} from "./components";
+import {Genres, MovieByGenre} from "./components";
 
 
 const App = () => {
@@ -17,7 +17,10 @@ const App = () => {
                     <Route path={'movies'} element={<MoviesPage/>}>
                         <Route path={':id'} element={<MoviePage/>}/>
                     </Route>
-                    <Route path={'genres'} element={<Genres/>}/>
+                    <Route path={'genres'} element={<Genres/>}>
+                        <Route path={':id'} element={<MovieByGenre/>}/>
+                    </Route>
+
                     <Route path={'*'} element={<NotFoundPage/>}/>
                 </Route>
             </Routes>

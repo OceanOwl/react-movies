@@ -1,0 +1,6 @@
+.genresContainer {
+    display: flex;
+    width: 160vh;
+    min-height: 83vh;
+    padding-top: 50px;
+}

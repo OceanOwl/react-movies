@@ -6,9 +6,8 @@ import {Rating} from "@mui/material";
 
 const SelectedFilm = () => {
 
-    const {selectedMovie} = useSelector(state =>state.movies)
-
-    // console.log(selectedMovie);
+    const {selectedMovie} = useSelector(state => state.movies)
+    const {genre} = useSelector(state => state.genres)
 
     return (
         <div>
@@ -21,6 +20,7 @@ const SelectedFilm = () => {
 
                         <div className='infoBlock'>
                             <h2>{selectedMovie.title}</h2>
+                            <h4>{selectedMovie.genre_ids.map(genre=><div key={genre.id} genre={genre}>{genre.name}</div>)}</h4>
                             <span>{selectedMovie.overview}</span>
                             <Rating name="customized-10"
                                     value={selectedMovie.vote_average}
