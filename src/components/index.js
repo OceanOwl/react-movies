@@ -4,4 +4,3 @@ export * from './Header/Header';
 export * from './Footer/Footer';
 export * from './SelectedFilm/SelectedFilm';
 export * from './Genres/Genres';
-export * from './MovieByGenre/MovieByGenre'
